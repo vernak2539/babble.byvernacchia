@@ -24,6 +24,7 @@
     "less": "~1.4.0"
   },
   "devDependencies": {
-    "grunt-recess": "~0.3.3"
+    "grunt-recess": "~0.3.3",
+    "grunt-contrib-watch": "~0.4.4"
   }
 }
