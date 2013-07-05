@@ -1,1 +1,20 @@
-.text{color:blue}
+.bio-image {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  background: url(/images/headshot.jpg) no-repeat;
+  -webkit-border-radius: 500px;
+     -moz-border-radius: 500px;
+          border-radius: 500px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  {
+    /* Retina-specific stuff here */
+  
+  }
+  .bio-image {
+    background: url(/images/headshot-2x.jpg) no-repeat;
+    background-size: 140px 140px;
+  }
+}

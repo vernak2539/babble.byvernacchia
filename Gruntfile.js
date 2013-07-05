@@ -22,7 +22,9 @@ module.exports = function(grunt) {
 				}
 			},
 			bootstrap: {
-				src: [ './components/bootstrap/less/bootstrap.less '],
+				src: [
+					'./less/bootstrap.less'
+				],
 				dest: './css/bootstrap.css',
 				options: {
 					compress: true
@@ -32,7 +34,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			less: {
-				files: [ './less/*.less' ],
+				files: [ './less/styles.less' ],
 				tasks: [ 'recess:compile' ]
 			}
 		}
@@ -42,6 +44,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [ 'recess:bootstrap', 'recess:compress' ]);
 
 	// Dev watch task
-	grunt.registerTask('dev', [ 'watch:less' ] );
+	grunt.registerTask('dev', [ 'recess:bootstrap', 'watch:less' ] );
 
 };
