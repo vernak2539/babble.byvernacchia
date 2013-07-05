@@ -14,23 +14,21 @@
 	        transition: @CSS @timing @ease;
 }
 
+body {
+	.size-font(1.2);
+}
+
 a {
+	.transitions();
+
 	&:hover {
 		text-decoration: none;
+		color: darken(@red, 10%) !important; 
 	}
 }
 
 .site-title {
 	color: @red !important;
-
-	>a, a:visited { 
-		color: @red !important;
-		.transitions();
-
-		&:hover {
-			color: lighten(@red, 15%) !important; 
-		}
-	}
 }
 
 .post {
