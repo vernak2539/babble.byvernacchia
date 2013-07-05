@@ -3,11 +3,12 @@ layout: default
 title: Babble by Vernacchia
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+{% for post in site.posts offset: 0 limit: 50 %}
+
+<div class="post">
+	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	<p class="post-meta">{{ post.date | date: "%B %d, %Y at %I:%M %p" }}</p>
+	<p class="post-content">{{ post.summary }}...</p>
 </div>
+
+{% endfor %}

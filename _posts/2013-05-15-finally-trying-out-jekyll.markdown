@@ -2,6 +2,7 @@
 layout: post
 title:  "I'm finally trying out Jekyll!"
 date:   2013-05-15 17:14:09
+summary: I'm finally trying out Jekyll. It's super easy to install, I guess you can check it out for yourself.
 ---
 
 I'm finally trying out Jekyll. It's super easy to install, I guess you can check it out for yourself.

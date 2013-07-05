@@ -2,6 +2,7 @@
 layout: post
 title:  "Rebooting with Nginx and PHP5-FPM?"
 date:   2013-05-23 23:11:09
+summary: I recently switched from Apache to <a href="http://nginx.org/" target="_blank">Nginx</a> for all my hosting needs, and I could not be happier. Nginx is so much better. A little more work setting it up, but totally worth it. I digress.
 ---
 
 I recently switched from Apache to [Nginx][1] for all my hosting needs, and I could not be happier. Nginx is so much better. A little more work setting it up, but totally worth it. I digress.
@@ -17,7 +18,7 @@ I checked to see if PHP5-FPM is running and it turns out it's not. DAMN, there's
     unable to bind listening socket for address '/var/run/php5-fpm/my.name.socket': No 
     such file or directory
     
-I looked and looked for a solution for a couple hours, and let me tell you, I got super frustrated. I finally realized on the reboot of my server, the directory where I was storing the sockets got deleted. I thought I had created it before and it would just stay there, but I guess the `/var/run` directory gest cleared on reboot.
+I looked and looked for a solution for a couple hours, and let me tell you, I got super frustrated. I finally realized on the reboot of my server, the directory where I was storing the sockets got deleted. I thought I had created it before and it would just stay there, but I guess the `/var/run` directory gets cleared on reboot.
 
 I ran the following:
 

@@ -1,0 +1,77 @@
+@import "../components/bootstrap/less/variables.less";
+
+@red: #cd4128;
+
+.size-font (@multiple: 1) {
+	font-size: @baseFontSize * @multiple;
+	line-height: @baseFontSize * @multiple * 1.42857142857143;
+}
+
+.transitions (@CSS: all, @timing: 0.2s, @ease: ease-in-out) {
+	-webkit-transition: @CSS @timing @ease;
+	   -moz-transition: @CSS @timing @ease;
+	     -o-transition: @CSS @timing @ease;
+	        transition: @CSS @timing @ease;
+}
+
+body {
+	.size-font(1.2);
+}
+
+a {
+	.transitions();
+
+	&:hover {
+		text-decoration: none;
+		color: darken(@red, 10%) !important; 
+	}
+}
+
+.site-title {
+	color: @red !important;
+}
+
+.post {
+	width:95%;
+
+	>h3 {
+		margin-bottom: 0 !important;
+	}
+
+	>.post-meta {
+		color: @gray;
+		.size-font(.95);
+	}
+	>.post-content {
+
+		a, a:visited {
+			color: @red;
+		}
+	}
+}
+
+.bio-image {
+	width:140px;
+	height: 140px;
+	margin: 0 auto;
+	background: url(/images/headshot.jpg) no-repeat;
+	-webkit-border-radius : 500px;
+	-moz-border-radius    : 500px;
+	border-radius         : 500px;
+}
+
+.bio-desc {
+	margin-top: 10px;
+}
+
+.txt-center {
+	text-align: center !important;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	/* Retina-specific stuff here */
+	.bio-image {
+		background: url(/images/headshot-2x.jpg) no-repeat;
+		background-size: 140px 140px;
+	}
+}

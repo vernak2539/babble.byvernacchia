@@ -1,0 +1,30 @@
+{
+  "name": "babble-jekyll",
+  "version": "0.1.0",
+  "description": "My babblings moved to jekyll",
+  "main": "_site",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:vernak2539/babble-jekyll.git"
+  },
+  "keywords": [
+    "jekyll",
+    "vernacchia",
+    "babble",
+    "thoughts",
+    "blog"
+  ],
+  "author": "Alex Vernacchia",
+  "license": "MIT",
+  "dependencies": {
+    "grunt-cli": "~0.1.9",
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.2",
+    "less": "~1.4.0"
+  },
+  "devDependencies": {
+    "grunt-recess": "~0.3.3",
+    "grunt-contrib-watch": "~0.4.4"
+  }
+}
