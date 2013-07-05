@@ -1,9 +1,25 @@
----
-layout: default
----
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+{% include header.html %} 
 
-<div id="post">
-{{ content }}
-</div>
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span12">&nbsp;</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span9">
+				<div class="span12 post">
+					<p><a href="/">go back home...</a></p>
+					<h1 class="site-title">{{ page.title }}</h1>
+					<p class="post-meta">{{ page.date | date: "%B %d, %Y" }}</p>
+					<p>{{ content }}</p>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="span12"><h1>&nbsp;</h1></div>
+				<div class="span12" style="margin-left:0 !important;">
+					{% include sidebar.html %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% include footer.html %} 

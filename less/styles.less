@@ -1,3 +1,57 @@
+@import "../components/bootstrap/less/variables.less";
+
+@red: #cd4128;
+
+.size-font (@multiple: 1) {
+	font-size: @baseFontSize * @multiple;
+	line-height: @baseFontSize * @multiple * 1.42857142857143;
+}
+
+.transitions (@CSS: all, @timing: 0.2s, @ease: ease-in-out) {
+	-webkit-transition: @CSS @timing @ease;
+	   -moz-transition: @CSS @timing @ease;
+	     -o-transition: @CSS @timing @ease;
+	        transition: @CSS @timing @ease;
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.site-title {
+	color: @red !important;
+
+	>a, a:visited { 
+		color: @red !important;
+		.transitions();
+
+		&:hover {
+			color: lighten(@red, 15%) !important; 
+		}
+	}
+}
+
+.post {
+	width:95%;
+
+	>h3 {
+		margin-bottom: 0 !important;
+	}
+
+	>.post-meta {
+		color: @gray;
+		.size-font(.95);
+	}
+	>.post-content {
+
+		a, a:visited {
+			color: @red;
+		}
+	}
+}
+
 .bio-image {
 	width:140px;
 	height: 140px;
@@ -6,6 +60,14 @@
 	-webkit-border-radius : 500px;
 	-moz-border-radius    : 500px;
 	border-radius         : 500px;
+}
+
+.bio-desc {
+	margin-top: 10px;
+}
+
+.txt-center {
+	text-align: center !important;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 

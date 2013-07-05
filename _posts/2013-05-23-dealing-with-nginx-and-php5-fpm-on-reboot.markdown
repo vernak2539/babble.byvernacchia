@@ -2,6 +2,7 @@
 layout: post
 title:  "Rebooting with Nginx and PHP5-FPM?"
 date:   2013-05-23 23:11:09
+summary: I recently switched from Apache to <a href="http://nginx.org/" target="_blank">Nginx</a> for all my hosting needs, and I could not be happier. Nginx is so much better. A little more work setting it up, but totally worth it. I digress.
 ---
 
 I recently switched from Apache to [Nginx][1] for all my hosting needs, and I could not be happier. Nginx is so much better. A little more work setting it up, but totally worth it. I digress.
