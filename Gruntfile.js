@@ -1,11 +1,22 @@
 /*global module:false*/
 module.exports = function(grunt) {
 
+	"use strict";
+
 	// load all grunt tasks
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 	// Project configuration.
 	grunt.initConfig({
+		jshint: {
+			all: [
+				'./js/*.js'
+			]
+			, options: { jshintrc: '.jshintrc' }
+			, gruntfile: {
+				src: 'Gruntfile.js'
+			}
+		},
 		recess: {
 			compile: {
 				src: ['./less/styles.less'],
@@ -54,15 +65,15 @@ module.exports = function(grunt) {
 		watch: {
 			all: {
 				files: [ './less/styles.less', './js/main.js' ],
-				tasks: [ 'recess:compile', 'copy:js' ]
+				tasks: [ 'jshint', 'recess:compile', 'copy:js' ]
 			}
 		}
 	});
 
 	// Default task.
-	grunt.registerTask('default', [ 'recess:bootstrap', 'recess:compress', 'uglify:base' ]);
+	grunt.registerTask('default', [ 'jshint', 'recess:bootstrap', 'recess:compress', 'uglify:base' ]);
 
 	// Dev watch task
-	grunt.registerTask('dev', [ 'recess:bootstrap', 'copy:js', 'watch:all' ] );
+	grunt.registerTask('dev', [ 'jshint', 'recess:bootstrap', 'copy:js', 'watch:all' ] );
 
 };
