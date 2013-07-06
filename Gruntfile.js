@@ -31,18 +31,38 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		uglify: {
+			base: {
+				files: {
+					'./js/min/main.js': [ './js/main.js' ]
+				}
+			}
+		},
+		copy: {
+			js: {
+				files: [
+					{
+						expand: true,
+						flatten: true,
+						src: [ './js/main.js' ],
+						dest: './js/min/',
+						filter: 'isFile'
+					}
+				]
+			}
+		},
 		watch: {
-			less: {
-				files: [ './less/styles.less' ],
-				tasks: [ 'recess:compile' ]
+			all: {
+				files: [ './less/styles.less', './js/main.js' ],
+				tasks: [ 'recess:compile', 'copy:js' ]
 			}
 		}
 	});
 
 	// Default task.
-	grunt.registerTask('default', [ 'recess:bootstrap', 'recess:compress' ]);
+	grunt.registerTask('default', [ 'recess:bootstrap', 'recess:compress', 'uglify:base' ]);
 
 	// Dev watch task
-	grunt.registerTask('dev', [ 'recess:bootstrap', 'watch:less' ] );
+	grunt.registerTask('dev', [ 'recess:bootstrap', 'copy:js', 'watch:all' ] );
 
 };

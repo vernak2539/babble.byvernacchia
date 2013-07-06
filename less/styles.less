@@ -9,13 +9,25 @@
 
 .transitions (@CSS: all, @timing: 0.2s, @ease: ease-in-out) {
 	-webkit-transition: @CSS @timing @ease;
-	   -moz-transition: @CSS @timing @ease;
-	     -o-transition: @CSS @timing @ease;
-	        transition: @CSS @timing @ease;
+		 -moz-transition: @CSS @timing @ease;
+			 -o-transition: @CSS @timing @ease;
+					transition: @CSS @timing @ease;
 }
 
 body {
 	.size-font(1.2);
+}
+
+.container {
+	position: relative;
+	z-index: 10;
+}
+
+#sharingIsCaring {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
 }
 
 a {
