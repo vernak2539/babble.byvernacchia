@@ -1,6 +1,6 @@
 (function() {
-
 	// mercilessly taken from http://www.zomb.io/
+	"use strict";
 
 	var bubbleCan;
 	var bubbleC;
@@ -59,10 +59,10 @@
 			}
 		}
 
-	}
+	};
 
 	window.onresize = function() {
-		bubbleCan.width = header.clientWidth;
-	}
+		bubbleCan.width = window.innerWidth;
+	};
 
 })();
