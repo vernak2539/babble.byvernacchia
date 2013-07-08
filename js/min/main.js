@@ -1,1 +1,68 @@
-!function(){"use strict";var a,b;window.onload=function(){function c(){setTimeout(function(){f.push({opacity:1,size:0,x:Math.random()*a.width+1,y:Math.random()*a.height+1}),g=2*Math.random()+1,c()},1e3*g)}function d(){for(var a=0;a<f.length;a++)f[a].size>10&&(f[a].opacity-=.01),f[a].size>20?f.splice(a,1):f[a].size+=.1}function e(){b.fillStyle="#fff",b.fillRect(0,0,a.width,a.height),b.strokeStyle="#cd4128",b.lineWidth=2;for(var c=0;c<f.length;c++)b.globalAlpha=f[c].opacity,b.beginPath(),b.arc(f[c].x,f[c].y,f[c].size,0,2*Math.PI),b.stroke(),b.globalAlpha=1}a=document.getElementById("sharingIsCaring"),b=a.getContext("2d"),a.width=window.innerWidth,a.height=window.innerHeight;var f=[],g=1;c(),setInterval(function(){d(),e()},1e3/60)},window.onresize=function(){a.width=window.innerWidth}}();
+(function() {
+	// mercilessly taken from http://www.zomb.io/
+	"use strict";
+
+	var bubbleCan;
+	var bubbleC;
+
+	window.onload = function() {
+		bubbleCan = document.getElementById("sharingIsCaring");
+		bubbleC = bubbleCan.getContext("2d");
+
+		bubbleCan.width = window.innerWidth;
+		bubbleCan.height = window.innerHeight;
+
+		var bubbles = [];
+		var bubTime = 1;
+
+		function addBubble() {
+			setTimeout(function() {
+				bubbles.push({opacity:1, size:0, x:Math.random()*bubbleCan.width+1, y:Math.random()*bubbleCan.height+1});
+				bubTime = Math.random()*2+1;
+				addBubble();
+			}, bubTime*1000);
+		}
+		addBubble();
+
+		setInterval(function() {
+			update();
+			draw();
+		}, 1000/60);
+
+		function update() {
+			for(var i=0; i<bubbles.length; i++) {
+				if(bubbles[i].size > 10) {
+					bubbles[i].opacity -= 0.01;
+				}
+
+				if(bubbles[i].size > 20) {
+					bubbles.splice(i, 1);
+				}
+				else {
+					bubbles[i].size += 0.1;
+				}
+			}
+		}
+
+		function draw() {
+			bubbleC.fillStyle = "#fff";
+			bubbleC.fillRect(0,0,bubbleCan.width,bubbleCan.height);
+
+			bubbleC.strokeStyle = "#cd4128";
+			bubbleC.lineWidth = 2;
+			for(var i=0; i<bubbles.length; i++) {
+				bubbleC.globalAlpha = bubbles[i].opacity;
+				bubbleC.beginPath();
+				bubbleC.arc(bubbles[i].x,bubbles[i].y,bubbles[i].size,0,2*Math.PI);
+				bubbleC.stroke();
+				bubbleC.globalAlpha = 1;
+			}
+		}
+
+	};
+
+	window.onresize = function() {
+		bubbleCan.width = window.innerWidth;
+	};
+
+})();
