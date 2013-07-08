@@ -11,10 +11,12 @@ So then I go and add the tests to my `Gruntfile.js` so I can run them before I b
 
 I finish integrating it into my build process and run `grunt qunit`. It's doing something... It's doing something... then I get something like the following:
 
-    Running "qunit:all" (qunit) task
-    Testing test/index.htmlOK
-    Warning: 0/0 assertions ran (15ms) Use --force to continue.
-    
+{% highlight bash %}
+Running "qunit:all" (qunit) task
+Testing test/index.htmlOK
+Warning: 0/0 assertions ran (15ms) Use --force to continue.
+{% endhighlight %}
+
 I go through the normal troubleshooting process, but I cannot seem to figure it out. Everything loads correctly in the browser, so why isn't it loading in my build process!!
 
 After a few hours of toiling, and staying up way past my bedtime, I finially thought that it could be something with RequireJS. Lo and behold, I found [this](https://github.com/gruntjs/grunt-contrib-qunit/issues/19). It **DOES NOT** work with the version of Require I was using.
