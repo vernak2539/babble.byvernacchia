@@ -1,3 +1,4 @@
 name: Babble by Vernacchia
 pygments: true
 port: 7500
+markdown: rdiscount
