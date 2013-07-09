@@ -105,20 +105,20 @@ a {
 
 .social {
 	list-style:none;
-	margin: 0;
-	width: 100px;
-	margin: 0 auto;
-	
+	margin: 5px auto 0;
+	text-align: center;
+
 	>li {
 		background: url('/images/social-icons.png') no-repeat;
 		background-size: 90px 30px;
 		width: 30px;
 		height: 30px;
-		display: block;
-		float: left;
+		display: inline-block;
 		opacity: 0.8;
 		margin-right: 5%;
 		.transitions();
+		zoom: 1;
+		*display: inline;
 		
 		&:last-child {
 			margin-right:0;
