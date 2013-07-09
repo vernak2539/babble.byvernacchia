@@ -12,23 +12,23 @@ summary: I <span class="bold">FINALLY</span> made my first open-source contribut
 
 I **FINALLY** made my first open-source contribution that I am proud of. Well I'm proud of all my work, but this was the first "real" one for me.
 
-At [ExactTarget][1] (where I work) we use [FuelUX][2] for our front-end components. This framework extends [Bootstrap][3], adding components that we use in our everyday development.
+At [ExactTarget][1] (where I work) we use [FuelUX][2] for our front-end components. FuelUX extends [Bootstrap][3], adding UI components that we use in our everyday development.
 
 While I was working on a project something frustrated me. It frustrated me so much I knew I needed to do something. So I forked our repo and went to work.
 
 ###The Problem...
 
-...is that Bootstrap's dropdown menus always display themselves below the clicked element. When something is positioned near the bottom of the page, or the dropdown is too big it will run off the page.
+...is that Bootstrap's dropdown menus always display themselves below the clicked element. When an element is positioned near the bottom of the page or the dropdown is too big, it will run off the page.
 
 For [our datagrid][4] this is a **HUGE** problem (since most of them are stretched to the bottom of the page).
 
 ###My Solution
 
-To combat this "problem" I created a javascript file that highjacks the click events on the elements with `data-toggle="dropdown"`. After highjacking the click, it makes a few calculations and will decide whether or not the dropdown should go above or below the clicked element.
+To combat this "problem" I created a javascript file that highjacks the click events on the elements with `data-toggle="dropdown"`. After highjacking the click, it makes a few calculations and will decide where to place the dropdown.
 
-When first starting, I used the window as the container for the dropdown (to base calculations off of). What happens when a container has an overflow that is not set to "visible"? Using the window as the container would not work in this case.
+My first working-draft made calculations using the `window` as the containing element. But, what happens when a containing element has an overflow value not set to "visible"? Using the window would not work in this case.
 
-This script will cycle through all the clicked element's parents and choose the closest element whose CSS overflow value is not "visible" to be the container.
+To fix this, I cycle through the clicked element's parents and choose the closest element whose CSS overflow value is not "visible" and set this to be the container.
 
 ###How to enable
 
