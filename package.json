@@ -1,6 +1,6 @@
 {
   "name": "babble-jekyll",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "My babblings moved to jekyll",
   "main": "_site",
   "scripts": {},
