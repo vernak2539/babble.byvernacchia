@@ -7,7 +7,7 @@ tags:
 - gruntjs
 - requirejs
 - qunit
-summary: I ran into a problem yesterday when I started writing tests for a <a href="https://github.com/vernak2539/js-com-app-calulator" target="_blank">personal project</a>. I completed writing my tests, and then ran them in the browser. YES, they worked!! Hell yeah.
+summary: I ran into a problem yesterday when I started writing tests for a <a href="https://github.com/vernak2539/js-com-app-calulator" target="_blank">personal project</a>. I completed writing my tests, and then ran them in the browser. YES, they worked!! Hell yeah, but.
 ---
 
 I ran into a problem yesterday when I started writing tests for a [personal project](https://github.com/vernak2539/js-com-app-calulator). I completed writing my tests, and then ran them in the browser. YES, they worked!! Hell yeah.
