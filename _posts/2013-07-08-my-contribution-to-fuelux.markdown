@@ -38,7 +38,7 @@ To fix this, I cycle through the clicked element's parents, choose the closest e
     * `down` = _will place dropdown below clicked element (falls back to default bootstrap behavior)_
     * `auto` = _will intelligently decide where to place dropdown based on height of dropdown and distances above and below the clicked element_
 
-I put the gists below, or you could check it out the [FuelUX repo][2]. 
+I put the gists below, or you could check it out the [FuelUX repo][2] _(2.4.0-wip branch)_. 
 
 Maybe this will end up in Bootstrap one day. Or, maybe not since Bootstrap 3 will be mobile first. I guess we'll see.
 
@@ -56,3 +56,4 @@ __NOTE 2:__ This code could probably be cleaned up a little more, but that's for
 [2]: https://github.com/ExactTarget/fuelux
 [3]: https://github.com/twitter/bootstrap
 [4]: http://exacttarget.github.io/fuelux/#datagrid
+[5]: https://github.com/ExactTarget/fuelux/tree/2.4.0-wip
