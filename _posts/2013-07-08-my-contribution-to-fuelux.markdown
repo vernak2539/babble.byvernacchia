@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My First Big Open Source Contribution"
+title: "My Contribution to FuelUX"
 date: 2013-07-08 20:49:09
 tags:
 - open source
