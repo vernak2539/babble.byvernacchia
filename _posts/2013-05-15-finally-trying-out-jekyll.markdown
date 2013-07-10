@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "I'm finally trying out Jekyll!"
+title:  "I'm Finally Trying Out Jekyll!"
 date:   2013-05-15 17:14:09
 tags:
 - jekyll
