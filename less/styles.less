@@ -7,7 +7,7 @@
 	line-height: @baseFontSize * @multiple * 1.42857142857143;
 }
 
-.transitions (@CSS: all, @timing: 0.2s, @ease: ease-in-out) {
+.transitions (@CSS: all, @timing: 0.2s, @ease: ease-in) {
 	-webkit-transition: @CSS @timing @ease;
 		 -moz-transition: @CSS @timing @ease;
 			 -o-transition: @CSS @timing @ease;
@@ -39,7 +39,7 @@ body {
 }
 
 a {
-	.transitions();
+	.transitions(color);
 
 	&:hover {
 		text-decoration: none;
@@ -151,6 +151,19 @@ a {
 
 	>.github {
 		background-position: -30px 0;
+	}
+}
+
+.repo-btn-container {
+	text-align: center;
+	margin-top: 40px;
+
+	a {
+		.transitions(none, 0);
+
+		&:hover {
+			color:@white !important;
+		}
 	}
 }
 
