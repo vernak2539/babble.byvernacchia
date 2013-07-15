@@ -2,7 +2,7 @@
 
 This is a basic theme for a Jekyll blog. It creates posts, uses tags, and can display gists.
 
-Right now, I use a few different gems/plugins than Jekyll normally uses/comes with. They include:
+Right now, I use a few different gems/plugins that Jekyll doesn't normally use/come with (Also use Ruby 1.9.3). They include:
 
 1. rdiscount - _for rendering_ (GEM)
 2. activesupport - _for caching_ (GEM)
