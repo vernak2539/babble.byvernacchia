@@ -1,16 +1,18 @@
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@vernacchia">
-<meta name="twitter:creator" content="@vernacchia">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@vernacchia" />
+<meta name="twitter:creator" content="@vernacchia" />
 {% if page.title %}
-  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{{ page.title }}" />
 {% else %}
-  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:title" content="{{ site.title }}" />
 {% endif %}
 {% if page.url %}
-  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+{% else %}
+  <meta name="twitter:url" content="{{ site.url }}" />
 {% endif %}
 {% if page.summary %}
-  <meta name="twitter:description" content="{{ page.summary | strip_html | xml_escape | truncate: 200 }}">
+  <meta name="twitter:description" content="{{ page.summary | strip_html | xml_escape | truncate: 200 }}" />
 {% else %}
-  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:description" content="{{ site.description }}" />
 {% endif %}
