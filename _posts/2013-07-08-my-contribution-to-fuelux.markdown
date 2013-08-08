@@ -7,6 +7,7 @@ tags:
 - FuelUX
 - bootstrap
 - javascript
+- programming
 summary: I finally made my first open-source contribution that I am proud of. Well not my first contribution and I'm proud of most of my work, but this was the first "real" one for me. <a href="https://twitter.com/ExactTarget" target="_blank">@ExactTarget</a> (where I work) we use FuelUX for our front-end components 
 ---
 
