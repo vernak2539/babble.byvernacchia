@@ -5,3 +5,10 @@ markdown: rdiscount
 url: http://babble.byvernacchia.com
 description: A small site where I talk about small tech thingys I do. Moved off of WordPress to Jekyll and couldn't be happier.
 keywords: "technology, javascript, blogging, web development, programming, babble"
+
+image:
+  source: uploads
+  output: generated
+  presets:
+    centered:
+      attr:
