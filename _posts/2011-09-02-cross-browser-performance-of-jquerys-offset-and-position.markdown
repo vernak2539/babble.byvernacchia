@@ -14,7 +14,7 @@ summary: For work I recently had to convert a PSD to XHTML/CSS. The only problem
 
 For work I recently had to convert a PSD to XHTML/CSS. The only problem with the design, that I could come to find, was how it called for a content area to meet up with another section, the footer, no matter what the height of the content area. So basically, the bottom of the content area always needs to meet up with the top of the footer. If there was enough text it would work, but if there wasn’t it would fall short. Just for reference the footer is pushed to the bottom of the page already (it will always be at the bottom of the page no matter the amount of text). I put a picture below to help illustrate the problem.
 
-![][1]
+{% image centered /2011/09/offset.jpg %}
 
 ### What Method to Use?
 
