@@ -11,3 +11,4 @@ Right now, I use a few different gems/plugins that Jekyll doesn't normally use/c
 5. [Imagemagick](http://www.imagemagick.org/script/index.php) - _for liquid image tags_
 6. [tag_gen.rb](http://charliepark.org/tags-in-jekyll/)
 7. [gist_gen.rb](http://blog.55minutes.com/2012/03/liquid-gist-tag-for-jekyll/#gist-1937862-gist-rb)
+8. [youtube.rb](https://gist.github.com/joelverhagen/1805814)

@@ -4,13 +4,15 @@
 
 	var bubbleCan;
 	var bubbleC;
+	var docBody;
 
 	window.onload = function() {
+		docBody = document.getElementById('contentBody');
 		bubbleCan = document.getElementById("sharingIsCaring");
 		bubbleC = bubbleCan.getContext("2d");
 
 		bubbleCan.width = window.innerWidth;
-		bubbleCan.height = window.innerHeight;
+		bubbleCan.height = docBody.clientHeight;
 
 		var bubbles = [];
 		var bubTime = 1;
