@@ -4,11 +4,11 @@ title: 'CGT 512 - Reading Reflection - Week 2'
 tags:
   - cgt512
   - cooper
-  - goal-oriented design
-  - Jacob Nielsen
+  - goal-oriented-design
+  - jacob-nielsen
   - tullis
-  - user interface
-  - user-centered design
+  - user-interface
+  - user-centered-design
   - ux
 summary: As this class rolls on, I will be writing more blogs about what I’ve had to read. This will help me stay on task and better understand what I am trying to read. So here it goes.
 ---
