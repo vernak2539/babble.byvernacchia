@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'CGT 512 - Reading Reflection - Week 2'
+title: CGT 512 - Reading Reflection - Week 2
+date: 2011-08-29 17:43:00
 tags:
   - cgt512
   - cooper

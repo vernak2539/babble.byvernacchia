@@ -1,6 +1,7 @@
 ---
-title: 20 Social Media Sites I Had No Clue About
 layout: post
+title: 20 Social Media Sites I Had No Clue About
+date: 2011-08-29 08:17:00
 tags:
   - tech-621
   - couchsurfing
