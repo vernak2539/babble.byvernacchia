@@ -4,7 +4,7 @@ title: TECH 621 - Reading Reflection - Week 2
 date: 2011-09-01 10:00:27
 tags:
   - enterprise-2.0
-  - tech621
+  - tech-621
   - web-as-a-platform
   - web1.0
   - web2.0
