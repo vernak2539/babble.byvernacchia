@@ -14,24 +14,24 @@
 				<div class="tag-title">{{page.title}}</div>
 
 				{% for post in site.posts %}
-				{% for tag in post.tags %}
-				{% if tag == page.tag %}
-				<div class="post">
-					<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-					<p class="post-meta">{{ post.date | date: "%B %d, %Y at %I:%M %p" }}</p>
-					<p class="post-content">{{ post.summary }}...</p>
-					<div class="tag-container">
-						{% for tag in post.tags %}
-							<a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;">
-								<span class="label label-important">{{ tag }}</span>
-							</a>
-							{% if forloop.last != true %}
-							{% endif %}
-						{% endfor %} 
-					</div>
-				</div>
-				{% endif %}
-				{% endfor %}
+					{% for tag in post.tags %}
+						{% if tag == page.tag %}
+						<div class="post">
+							<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+							<p class="post-meta">{{ post.date | date: "%B %d, %Y at %I:%M %p" }}</p>
+							<p class="post-content">{{ post.summary }}...</p>
+							<div class="tag-container">
+								{% for tag in post.tags %}
+									<a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;">
+										<span class="label label-important">{{ tag }}</span>
+									</a>
+									{% if forloop.last != true %}
+									{% endif %}
+								{% endfor %} 
+							</div>
+						</div>
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 			</div>
 			<div class="span3">
