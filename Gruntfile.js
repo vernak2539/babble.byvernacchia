@@ -74,6 +74,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [ 'jshint', 'recess:bootstrap', 'recess:compress', 'uglify:base' ]);
 
 	// Dev watch task
-	grunt.registerTask('dev', [ 'jshint', 'recess:bootstrap', 'copy:js', 'watch:all' ] );
+	grunt.registerTask('dev', [ 'jshint', 'recess:compile', 'recess:bootstrap', 'copy:js', 'watch:all' ] );
 
 };
