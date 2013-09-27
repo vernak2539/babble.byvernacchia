@@ -13,6 +13,7 @@ body {
 }
 
 .container h3 {
+  line-height: 35px;
   color: #555555;
 }
 
