@@ -4,8 +4,7 @@ title: 'RAA 1 (CGT 512): A study of Web usability for older adults seeking onlin
 date: 2011-09-27 10:43:34
 tags:
   - cgt-512
-  - RAA
-  - research-article-analysis
+  - raa
 summary: The purpose of this study was to report on how older individuals have trouble with the internet as their age increases. The researchers wanted to find what features were hardest for people with failing vision, motor skills, literacy, etc. to use. Their overarching goal was
 ---
 

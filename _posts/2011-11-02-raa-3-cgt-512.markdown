@@ -1,0 +1,31 @@
+---
+layout: post
+title: 'RAA 3:  Measuring end-user availability on the Web (CGT 512)'
+date: 2011-11-02 12:10:00
+tags:
+  - cgt-512
+  - raa
+  - user-experience
+  - availability
+summary: This study aimed to measure the availability, performance, and quality of service for service applications on a network. Traditional hardware and software measures seem to mislead and are inadequate. They propose looking at end-user experience, which will hopefully provide more meaningful benchmark measures of quality of service
+---
+
+**Citation**
+
+Merzbacher, M., & Patterson, D. (2002). Measuring end-user availability on the Web: practical experience. _Dependable Systems and Networks, 2002. DSN 2002. Proceedings. International Conference on_ (pp. 473 – 477). doi:10.1109/DSN.2002.1028932
+
+**Purpose**
+
+This study aimed to measure the availability, performance, and quality of service for service applications on a network. Traditional hardware and software measures seem to mislead and are inadequate. They propose looking at end-user experience, which will hopefully provide more meaningful benchmark measures of quality of service. This was designed to emulate real users, but in actuality no real users were involved.
+
+**Methods**
+
+They created a “bot” using Java, which accessed varied sites on the internet (local and worldwide). They looked at the load time and network delay when accessing these site. Researchers used the local sites as a control group, because there is virtually no load time and no network delay. The specifically looked at online retail sites, search engines, and directory services.
+
+**Main Findings**
+
+Results indicated that availability was at 99% for these sites, when local and short-term network errors were removed (81% before these were removed). The found that local availability had the largest effect on user experience. They also found when retry occurred (reloading the page) that non-local errors fell by 83%.  They detail further research that could be conducted in order to help create benchmarks and test suites.
+
+**Analysis**
+
+I feel this is relevant to me, as I design sites and try to eliminate the load time (availability) of my sites. In my experience, most users get fed up with a site loading to long, and even Nielsen (if I remember correctly) stated that users will only wait, on average, 3 seconds for a site to load. They also mention retrying, and I am glad to find that errors fall when the page is reloaded. Sometimes a page may not load everything, or code interacts the wrong way with other code, and the only way to fix it is to reload the page.

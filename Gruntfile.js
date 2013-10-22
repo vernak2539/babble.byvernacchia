@@ -76,4 +76,6 @@ module.exports = function(grunt) {
 	// Dev watch task
 	grunt.registerTask('dev', [ 'jshint', 'recess:compile', 'recess:bootstrap', 'copy:js', 'watch:all' ] );
 
+	grunt.registerTask('css', [ 'recess:compile' ] );
+
 };

@@ -1,0 +1,17 @@
+---
+layout: post
+title: UX Booth
+date: 2011-10-27 13:20:55
+tags:
+  - cgt-512
+  - interesting-blogs
+  - user-experience
+  - user-interface
+summary: I recently stumbled upon <a href="http://www.uxbooth.com/" target="_blank">UX Booth</a> while looking for more in-depth UX/UI articles after our class discussion yesterday. It is a great website for all those interested in user interface and user experience
+---
+
+I recently stumbled upon [UX Booth][1] while looking for more in-depth UX/UI articles after our class discussion yesterday. It is a great website for all those interested in user interface and user experience.
+
+{% image 870xAUTO /2011/10/ux-booth.jpg %}
+
+   [1]: http://www.uxbooth.com/
