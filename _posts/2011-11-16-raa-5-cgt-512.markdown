@@ -1,0 +1,34 @@
+---
+layout: post
+title: 'RAA 5: The impact of information architecture (CGT 512)'
+date: 2011-11-16 20:10:02
+tags:
+  - cgt-512
+  - raa
+  - academia
+  - information-architecture
+  - usability
+summary: This study addresses how information architectures affect the ability of individuals to navigate a site. The site they used was the Dalhousie University’s Web Site, and it was selected because it had previously received awards for design and it had a limited number of options for navigating the site
+---
+
+**Citation **
+
+Gullikson, S., Blades, R., Bragdon, M., McKibbon, S., Sparling, M., & Toms, E. G. (1999). The impact of information architecture on academic web site usability. _Electronic Library_, _17_(5), 293-304. Retrieved from http://www.emeraldinsight.com/10.1108/02640479910330714
+
+**Purpose**
+
+This study addresses how information architectures affect the ability of individuals to navigate a site. The site they used was the Dalhousie University’s Web Site, and it was selected because it had previously received awards for design and it had a limited number of options for navigating the site.
+
+**Methods**
+
+Twenty-four participants accessed the University’s website over a period of eight days. They were given packets of questions relating to the website and were asked to spend no more than three minutes on each question (one question per page). Once they completed all the questions they were interviewed by the researchers about their experiences.
+
+**Main Findings**
+
+The performance of the participants when asked to accomplish tasks on this website was overall poor. Researchers indicated that the tasks were not hard and should have been easy to accomplish. Participants usually spent more time looking for an answer than the time would allow.
+
+Users seemed to be confused by the categories and their label. Menu labels did not describe the content it linked to well enough. When users did not see the words they expected, it added to their confusion.
+
+**Analysis**
+
+Overall it seemed that it was hard to find information on this academic site. It seems that the information was not organized for a student, and may have been only organized for a teacher/faculty/administration. This is very important and we are studying it now, with our research involving nanaHUB. This article helps me to realize a structure usable by everyone is needed, especially at the scale of university websites.

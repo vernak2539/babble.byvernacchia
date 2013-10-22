@@ -1,0 +1,26 @@
+---
+layout: post
+title: The New Gmail (2011)
+date: 2011-11-02 14:00:59
+tags:
+  - cgt-512
+  - good-design
+  - user-experience
+  - user-interface
+  - gmail
+  - google
+  - heuristics
+  - nielsen
+summary: Gmail has had the same design for a couple years now, with no major changes released during this time. I was wondering when something was going to change, and then Google announced they were redesigning Gmail over this past summer
+---
+
+Gmail has had the same design for a couple years now, with no major changes released during this time. I was wondering when something was going to change, and then Google announced they were redesigning Gmail over this past summer. It is November now, and it is finally coming out, thank goodness. Check out [Google’s announcement][1] of the new “look.”
+
+I recently “upgraded” to the new design, and I have to say I like it a lot. The all around look and feel are much better, in addition to the improved search and application functionality. I feel this new design (below) follows many of [Nielsen’s usability heuristics][2]. The one I like the most, basically because it looks better than before, is how Gmail displays the system status to users. In the screenshot below, this is the pale yellow box at the top. Every time a user does something (delete/send/draft a message) this bar will pop up and let you know exactly what you did, and it even gives you the option to undo that action (this actually relates to Nielsen’s flexibility and ease of use heuristic).
+
+{% image 870xAUTO /2011/11/gmail.jpg %}
+
+Overall, I think this is a vast improvement (design-wise mostly) from the previous versions of Gmail. I cannot wait until they transition this layout over to the business accounts.
+
+   [1]: http://gmailblog.blogspot.com/2011/11/gmails-new-look.html
+   [2]: http://www.useit.com/papers/heuristic/heuristic_list.html
