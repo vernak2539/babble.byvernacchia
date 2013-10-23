@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Breaking That Long Text with CSS3
-date: 2011-12-18 12:14:09
+date: 2012-01-31 12:14:09
 tags:
   - css
   - web-development

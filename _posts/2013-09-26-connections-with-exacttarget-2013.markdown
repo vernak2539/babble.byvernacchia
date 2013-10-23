@@ -9,3 +9,6 @@ tags:
 - work
 summary: This past week was ExactTarget's Connections conference. Boy did I have a hell of a time. By that I mean time leading up to the conference. 
 ---
+
+Coming Soon...
+
