@@ -1,0 +1,15 @@
+@import "../bower_components/bootstrap/less/variables.less";
+
+@red: #cd4128;
+
+.size-font (@multiple: 1) {
+	font-size: @baseFontSize * @multiple;
+	line-height: @baseFontSize * @multiple * 1.42857142857143;
+}
+
+.transitions (@CSS: all, @timing: 0.2s, @ease: ease-in) {
+	-webkit-transition: @CSS @timing @ease;
+		 -moz-transition: @CSS @timing @ease;
+			 -o-transition: @CSS @timing @ease;
+					transition: @CSS @timing @ease;
+}

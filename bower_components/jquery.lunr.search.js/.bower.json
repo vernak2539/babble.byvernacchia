@@ -1,0 +1,13 @@
+{
+  "name": "jquery.lunr.search.js",
+  "_cacheHeaders": {
+    "ETag": "\"b84cfa40e6df1926f67758aa2195f81c\"",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:b84cfa40e",
+  "main": "index.js",
+  "_source": "https://rawgithub.com/slashdotdash/jekyll-lunr-js-search/master/js/jquery.lunr.search.js",
+  "_target": "*",
+  "_originalSource": "https://rawgithub.com/slashdotdash/jekyll-lunr-js-search/master/js/jquery.lunr.search.js",
+  "_direct": true
+}

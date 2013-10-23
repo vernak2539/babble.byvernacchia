@@ -14,6 +14,7 @@
   "strict": true,
   "unused": true,
   "globals": {
-    "require": true
+    "require": true,
+    "$": true
   }
 }

@@ -1,0 +1,15 @@
+{
+  "name": "date.format.js",
+  "_cacheHeaders": {
+    "ETag": "\"880024-fab-e276380\"",
+    "Last-Modified": "Sat, 18 Apr 2009 14:24:30 GMT",
+    "Content-Length": "4011",
+    "Content-Type": "application/x-javascript"
+  },
+  "_release": "e-tag:880024-fa",
+  "main": "index.js",
+  "_source": "http://stevenlevithan.com/assets/misc/date.format.js",
+  "_target": "*",
+  "_originalSource": "http://stevenlevithan.com/assets/misc/date.format.js",
+  "_direct": true
+}

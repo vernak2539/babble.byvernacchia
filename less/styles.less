@@ -1,4 +1,4 @@
-@import "../components/bootstrap/less/variables.less";
+@import "helpers.less";
 
 @red: #cd4128;
 
@@ -138,7 +138,7 @@ a {
 	width:140px;
 	height: 140px;
 	margin: 0 auto;
-	background: url(/images/headshot.jpg) no-repeat;
+	background: url(/img/headshot.jpg) no-repeat;
 	-webkit-border-radius : 500px;
 	-moz-border-radius    : 500px;
 	border-radius         : 500px;
@@ -160,7 +160,7 @@ a {
 	text-align: center;
 
 	>li {
-		background: url('/images/social-icons.png') no-repeat;
+		background: url('/img/social-icons.png') no-repeat;
 		background-size: 90px 30px;
 		width: 30px;
 		height: 30px;
@@ -243,10 +243,69 @@ a {
 	margin-bottom: 10px;
 }
 
+@inputHeight: 90px;
+
+.site-search-container {
+	position: absolute;
+	top: -1 * ( @inputHeight + 1 );
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+
+	>.search-toggle {
+		position: absolute;
+		top: @inputHeight;
+		left: 50%;
+		width: 80px;
+		height: 26px;
+		margin-left: -40px;
+		background: #fff;
+		border: 1px solid #ccc;
+		border-top: none;
+		text-align: center;
+		border-radius: 0 0 4px 4px;
+		cursor: pointer;
+		font-size: 14px;
+	}
+
+	form {
+		width: 100%;
+		margin: 0 auto;
+
+		>.custom-input {
+			position: relative;
+			width: 940px;
+			margin: 0 auto;
+			display: block;
+			height: @inputHeight;
+			background: url( /img/search-icon.png ) no-repeat;
+			background-position: 10px center;
+			background-size: 60px 60px;
+			box-shadow: none;
+			border-radius: 0;
+			border:0;
+			padding: 15px 5px 15px 85px;
+			font-size: 36px;
+			line-height: normal;
+			font-style: italic;
+			outline:  0px !important;
+			box-sizing: border-box;
+
+			&:focus {
+				outline: none;
+				box-shadow: none !important;
+			}
+		}
+	}
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 	/* Retina-specific stuff here */
 	.bio-image {
-		background: url(/images/headshot-2x.jpg) no-repeat;
+		background: url(/img/headshot-2x.jpg) no-repeat;
 		background-size: 140px 140px;
 	}
 
@@ -254,10 +313,41 @@ a {
 		list-style:none;
 		
 		>li {
-			background: url('/images/social-icons-2x.png') no-repeat;
+			background: url('/img/social-icons-2x.png') no-repeat;
 			background-size: 90px 30px;
 		}
 	}
 }
+
+@media (min-width: 1200px) {
+	.site-search-container {
+		form {
+			>.custom-input {
+				width: 1170px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.site-search-container {
+		form {
+			>.custom-input {
+				width: 1170px;
+			}
+		}
+	}
+}
+
+@media (max-width: 979px) {
+	.site-search-container {
+		form {
+			>.custom-input {
+				width: 100%;
+			}
+		}
+	}
+}
+
 
 @import "syntax.less";
