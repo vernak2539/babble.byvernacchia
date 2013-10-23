@@ -8,16 +8,18 @@ title: Babble by Vernacchia
 <div class="post">
 	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 	<p class="post-meta">{{ post.date | date: "%B %d, %Y at %I:%M %p" }}</p>
-	<p class="post-content">{{ post.summary }}...</p>
 	<div class="tag-container">
+		<strong>Tags:</strong>
 		{% for tag in post.tags %}
 			<a href="/tags/{{ tag }}" class="post-tag" title="View posts tagged with &quot;{{ tag }}&quot;">
 				{{ tag }}{% if forloop.last != true %}<span class="comma">, </span>{% endif %}
 			</a>
 			{% if forloop.last != true %}
 			{% endif %}
-		{% endfor %} 
-	</div>
+		{% endfor %}
+	</div>	
+	<p class="post-content">{{ post.summary }}...</p>
+	
 </div>
 
 {% endfor %}
