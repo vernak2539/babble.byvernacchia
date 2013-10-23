@@ -1,6 +1,6 @@
 ---
 layout: post
-title:'RAA 4: Twitter Adoption and Use in Mass Convergence and Emergency Events (TECH 621)' 
+title: 'RAA 4: Twitter Adoption and Use in Mass Convergence and Emergency Events (TECH 621)' 
 date: 2011-12-03 20:33:15
 tags:
   - raa
