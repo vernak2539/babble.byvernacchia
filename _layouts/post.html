@@ -12,10 +12,10 @@
 					<p class="post-meta">{{ page.date | date: "%B %d, %Y at %I:%M %p" }}</p>
 					<p>{{ content }}</p>
 					<div class="tag-container">
-						<strong>Tags:</strong>
+						<strong>Tags:&nbsp;</strong>
 						{% for tag in page.tags %}
 							<a href="/tags/{{ tag }}" class="post-tag" title="View posts tagged with &quot;{{ tag }}&quot;">
-								{{ tag }}{% if forloop.last != true %}<span class="comma">, </span>{% endif %}
+								{{ tag }}{% if forloop.last != true %}<span class="comma">,&nbsp;</span>{% endif %}
 							</a>
 							{% if forloop.last != true %}
 							{% endif %}

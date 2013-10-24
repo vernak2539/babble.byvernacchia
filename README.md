@@ -1,9 +1,9 @@
 ##A Custom Jekyll Theme For My Babble
 
-This is a basic theme for a Jekyll blog. It does the following:
+###Features
 
 1. Creates posts (obviously)
-2. [Creates tags structure](http://charliepark.org/tags-in-jekyll/)
+2. [Creates tag structure](http://charliepark.org/tags-in-jekyll/)
 3. [Displays gists](http://blog.55minutes.com/2012/03/liquid-gist-tag-for-jekyll/#gist-1937862-gist-rb)
 4. [Displays youtube videos](https://gist.github.com/joelverhagen/1805814)
 5. Pagination
@@ -17,15 +17,49 @@ This is a basic theme for a Jekyll blog. It does the following:
         2. modified text display of entries delivered
         3. substring title returned if over certain amount of characters
 
-Right now, I use a few different gems/plugins that Jekyll doesn't normally use/come with (Also use Ruby 1.9.3). They include:
+### GEMs Needed
+
+I have just started using Ruby v2.0.0 (but this will work with v1.9.3). GEMs needed include:
 
 1. rdiscount - _for rendering_
 2. activesupport - _for caching_
-3. json _for Lunr Search_
-4. nokogiri _for Lunr Search_
+3. json - _for Lunr Search_
+4. nokogiri - _for Lunr Search_
+
+###Grunt Tasks
+
+1. **default**
+    * jshint
+    * compresses bootstrap LESS
+    * compresses site LESS
+    * compresses search pages specific LESS
+    * uglifies JS
+    * uglifies search page specific JS
+    * copies bootstrap images into main image directory (from bower_components)
+2. **dev**
+    * jshint
+    * compresses bootstrap LESS
+	* compiles site LESS
+    * compiles search pages specific LESS
+	* copies unminified JS into min/
+    * copies unminified search page specific JS into min/
+    * copies bootstrap images into main image directory (from bower_components)
+3. **watchAll**
+    * _dev_ task executed
+    * watches all LESS and JS files in top level directory
+        * executes _dev_ task when changes occur
+4. **release** (super optimized)
+    * _Need to have optipng & jpegtran installed._
+        * Run `brew install optipng jpeg` (MAC) or `apt-get install optipng libjpeg libjpeg-progs` (Linux)
+    * runs _default_ task
+    * executes `jekyll build`
+    * optimizes images in _site/ directory (img/ and generated/)
+    * removes unnecessary files in _site/ directory
+    * minifies HTML
+    * minifies JSON used by Lunr search plugin
 
 ###If You're Using Github Pages
-If you're using Github Pages to publish with this "theme" you will not be able to use any custom plugins (i.e. Jekyll Image Tag, tag_gen, gist_gen, or youtube). Checkout the two links below, which outline what you can do to combat this problem.
+If you're using Github Pages to publish with this "theme" you **WILL NOT** be able to use any custom plugins. Checkout the two links below, which outline what you can do to combat this problem.
 
 + http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html
 + http://davidensinger.com/2013/04/deploying-jekyll-to-github-pages/

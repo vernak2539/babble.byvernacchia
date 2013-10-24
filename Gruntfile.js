@@ -89,7 +89,7 @@ module.exports = function(grunt) {
 					{
 						expand: true,
 						flatten: true,
-						src: [ './js/index.js' ],
+						src: [ './js/*.js' ],
 						dest: './js/min/',
 						filter: 'isFile'
 					}
@@ -109,10 +109,59 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			all: {
-				files: [ './less/*.less', './js/index.js' ],
-				tasks: [ 'jshint', 'recess:compile', 'copy:js' ]
+				files: [ './less/*.less', './js/*.js' ],
+				tasks: [ 'dev' ]
 			}
-		}
+		},
+		shell: {
+			buildJekyll: {
+				options: {
+					stdout: true
+				},
+				command: 'jekyll build'
+			}
+		},
+		img: {
+			generatedImg: {
+				src: './_site/generated'
+			},
+			siteImg: {
+				src: './_site/img'
+			}
+		},
+		htmlmin: {
+			dist: {
+				options: {
+					removeComments: true,
+					collapseWhitespace: true,
+					removeRedundantAttributes: true,
+					useShortDoctype: true,
+					removeOptionalTags: true,
+					removeEmptyAttributes: true
+				},
+				expand: true,
+				cwd: './',
+				src: [ '_site/**/*.html' ],
+				dest: './'
+			}
+		},
+		minjson: {
+			searchMin: {
+				files: {
+					'./_site/search.json': './_site/search.json'
+				}
+			}
+		},
+		clean: [
+			"./_site/uploads",
+			"./_site/bower_components",
+			"./_site/node_modules",
+			"./_site/less",
+			"./_site/bower.json",
+			"./_site/Gruntfile.js",
+			"./_site/package.json",
+			"./_site/README.md"
+		]
 	});
 
 	// Default task.
@@ -139,6 +188,16 @@ module.exports = function(grunt) {
 	grunt.registerTask('watchAll', [
 		'dev'
 		, 'watch:all'
+	]);
+
+	grunt.registerTask( 'release', [
+		'default'
+		, 'shell:buildJekyll'
+		, 'img:generatedImg'
+		, 'img:siteImg'
+		, 'clean'
+		, 'htmlmin:dist'
+		, 'minjson:searchMin'
 	]);
 
 	grunt.registerTask('css', [ 'recess:compile', 'recess:compileSearch' ] );
