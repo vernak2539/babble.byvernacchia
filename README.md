@@ -50,7 +50,9 @@ I have just started using Ruby v2.0.0 (but this will work with v1.9.3). GEMs nee
         * executes _dev_ task when changes occur
 4. **release** (super optimized)
     * _Need to have optipng & jpegtran installed._
-        * Run `brew install optipng jpeg` (MAC) or `apt-get install optipng libjpeg libjpeg-progs` (Linux)
+        * `brew install optipng jpeg` (MAC)
+        * `apt-get install optipng libjpeg libjpeg-progs` (Linux not ubuntu)
+        * `apt-get install optipng libjpeg62 libjpeg-progs` (ubuntu)
     * runs _default_ task
     * executes `jekyll build`
     * optimizes images in _site/ directory (img/ and generated/)
