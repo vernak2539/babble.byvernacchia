@@ -33,15 +33,21 @@ module.exports = function(grunt) {
 				}
 			},
 			compileSearch: {
-				src: ['./less/search.less'],
-				dest: './css/search.css',
+				src: [
+					'./less/styles.less',
+					'./less/search.less'
+				],
+				dest: './css/search-styles.css',
 				options: {
 					compile: true
 				}
 			},
 			compressSearch: {
-				src: ['./less/search.less'],
-				dest: './css/search.css',
+				src: [
+					'./less/styles.less',
+					'./less/search.less'
+				],
+				dest: './css/search-styles.css',
 				options: {
 					compress: true
 				}
@@ -59,7 +65,9 @@ module.exports = function(grunt) {
 		uglify: {
 			main: {
 				files: {
-					'./js/min/main.js': [ './js/main.js' ]
+					'./js/min/index.js': [ './js/index.js' ],
+					'./js/min/all.js': [ './js/all.js' ],
+					'./js/min/jquery.js': [ './bower_components/jquery/jquery.js' ]
 				}
 			},
 			search: {
@@ -73,11 +81,6 @@ module.exports = function(grunt) {
 						'./bower_components/jquery.lunr.search.js/index.js'
 					]
 				}
-			},
-			jquery: {
-				files: {
-					'./js/min/jquery.js': [ './bower_components/jquery/jquery.js' ]
-				}
 			}
 		},
 		copy: {
@@ -86,7 +89,7 @@ module.exports = function(grunt) {
 					{
 						expand: true,
 						flatten: true,
-						src: [ './js/main.js' ],
+						src: [ './js/index.js' ],
 						dest: './js/min/',
 						filter: 'isFile'
 					}
@@ -106,7 +109,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			all: {
-				files: [ './less/*.less', './js/main.js' ],
+				files: [ './less/*.less', './js/index.js' ],
 				tasks: [ 'jshint', 'recess:compile', 'copy:js' ]
 			}
 		}
@@ -118,7 +121,6 @@ module.exports = function(grunt) {
 		, 'recess:bootstrap'
 		, 'recess:compress'
 		, 'recess:compressSearch'
-		, 'uglify:jquery'
 		, 'uglify:main'
 		, 'uglify:search'
 		, 'copy:boostrapImg'
@@ -130,7 +132,6 @@ module.exports = function(grunt) {
 		, 'recess:bootstrap'
 		, 'recess:compile'
 		, 'recess:compileSearch'
-		, 'uglify:jquery'
 		, 'copy:js'
 		, 'copy:boostrapImg'
 	]);

@@ -1,0 +1,1 @@
+$(function(){"use strict";var a=$(".site-search-container"),b=parseInt(a.css("top").replace(/px/,""),10);$(document).on("click","#js-search-toggle",function(){var c=parseInt(a.css("top").replace(/px/,""),10);0>c?(a.animate({top:0},500),a.find("#js-search-toggle").html("Close")):(a.animate({top:b},500),a.find("#js-search-toggle").html("Search"))})});

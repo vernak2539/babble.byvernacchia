@@ -12,8 +12,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="/css/styles.css">
-	<link rel="stylesheet" href="/css/search.css">
+	<link rel="stylesheet" href="/css/search-styles.css">
 </head>
 <body>
 <!-- end _includes/header.html -->
@@ -24,7 +23,7 @@
 		</div>
 		<div class="row-fluid">
 			<div class="span12">
-				<h1 class="site-title"><a href="/">Babble by Vernacchia</a></h1>
+				<h1 class="site-title js-hidden" style="display:none;"><a href="/">Babble by Vernacchia</a></h1>
 			</div>
 		</div>
 		<div class="row-fluid">
@@ -59,23 +58,15 @@
 			</div>
 	</div>
 
-	<script id="search-results-template" type="text/mustache">
-		{{#entries}}
-			<article class="result clearfix">
-				{{#date}}
-				<div class="date">
-					<small><strong><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></strong></small>
-				</div>
-				{{/date}}
-				<div class="title"><strong><a href="{{url}}">{{title}}</a></strong></div>
-			</article>
-		{{/entries}}
-	</script>
+
 
 	<script type="text/javascript" src="/js/min/search.js"></script>
+
 	<script type="text/javascript">
 	$(function() {
 		"use strict";
+
+		$('.js-hidden').show();
 
 		function getParams(){var e,t=[],n={},r=false,i=/^\s+|\s+$/g,s;s=function(t){var n;if(!String.prototype.trim){n=t.replace(i,"")}else{n=t.trim()}return n};if(e=document.location.search){t=e.substring(1).split("&");r=t.pop()}while(r){r=unescape(r);if(r.indexOf("=")==-1){n[s(r)]=true}else{var o=r.split("=");n[s(o[0])]=s(o[1])}r=t.pop()}return n}
 
@@ -88,6 +79,18 @@
 
 		$('#query').val( getParams().q );
 	});
+	</script>
+	<script id="search-results-template" type="text/mustache">
+		{{#entries}}
+			<article class="result clearfix">
+				{{#date}}
+				<div class="date">
+					<small><strong><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></strong></small>
+				</div>
+				{{/date}}
+				<div class="title"><strong><a href="{{url}}">{{title}}</a></strong></div>
+			</article>
+		{{/entries}}
 	</script>
 	<!-- _includes/footer.html -->
 	<script>
