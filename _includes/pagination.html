@@ -1,4 +1,4 @@
-<div class="pagination post-pagination">
+<div class="pagination post-pagination visible-desktop">
 	<ul class="pages">
 		{% if paginator.previous_page %}
 			<li class="previous">
@@ -14,7 +14,6 @@
 			</li-->
 		{% endif %}
 
-	
 		<li class="page">
 			{% if paginator.page == 1 %}
 				<span class="current-page">1</span>
@@ -32,7 +31,6 @@
 				{% endif %}
 			</li>
 		{% endfor %}
-
 
 		{% if paginator.next_page %}
 			<li class="next">

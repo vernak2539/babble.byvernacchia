@@ -13,6 +13,7 @@
 		<div class="row-fluid">
 			<div class="span9">
 				{{ content }}
+				{% include mobile-pagination.html %}
 			</div>
 			<div class="span3 pad-bottom">
 				{% include sidebar.html %}
@@ -22,6 +23,7 @@
 			{% include pagination.html %}
 		</div>
 	</div>
+	<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" async></script>
 	<script type="text/javascript" src="/js/min/index.js" async></script>
 
 {% include footer.html %} 

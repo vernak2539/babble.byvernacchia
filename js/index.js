@@ -64,6 +64,8 @@
 	};
 
 	window.onresize = function() {
+		docBody = document.getElementById('contentBody');
+		bubbleCan.height = docBody.clientHeight;
 		bubbleCan.width = window.innerWidth;
 	};
 })();

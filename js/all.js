@@ -1,7 +1,7 @@
-// SEARCH STUFF (for every page but the actual search page)
 $(function() {
 	"use strict";
 
+	// SEARCH STUFF (for every page but the actual search page)
 	var $searchContainer = $('.site-search-container');
 	var initialOffest    = parseInt( $searchContainer.css('top').replace(/px/, ''), 10 );
 

@@ -1,0 +1,16 @@
+<div class="mobile-pagination hidden-desktop">
+	<div id="js-mobile-pagination-dropdown" class="dropdown">
+		<!-- Link or button to toggle dropdown -->
+		<span class="btn dropdown-toggle" data-toggle="dropdown">
+			Navigate to Different Page&nbsp;<span class="caret"></span>
+		</span>
+		<ul class="dropdown-menu">
+			{% if paginator.page == 1 %}
+				<li><a href="/">1</a></li>
+			{% endif %}
+			{% for count in (2..paginator.total_pages) %}
+				<li><a href="/page{{ count }}">{{ count }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
