@@ -3,7 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>{{ page.title }}</title>
+	<title>
+		{% if page.url == '/index.html' %}
+			{{ page.title }}
+		{% else %}
+			{{ page.title }} | Babble by Vernacchia
+		{% endif %}
+	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	{% include meta-data.html %}
 	{% include open-graph-meta.html %}
