@@ -5,9 +5,7 @@
 			Navigate to Different Page&nbsp;<span class="caret"></span>
 		</span>
 		<ul class="dropdown-menu">
-			{% if paginator.page == 1 %}
-				<li><a href="/">1</a></li>
-			{% endif %}
+			<li><a href="/">1</a></li>
 			{% for count in (2..paginator.total_pages) %}
 				<li><a href="/page{{ count }}">{{ count }}</a></li>
 			{% endfor %}
