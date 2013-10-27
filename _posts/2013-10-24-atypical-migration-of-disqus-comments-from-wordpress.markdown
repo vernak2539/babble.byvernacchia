@@ -14,18 +14,20 @@ I have been working hard on my Jekyll blog (this thingy) and finally got to a po
 
 I started by trying to use Disqus' URL Mapper migration tool, but it turned out that you couldn’t migrate comments between sites with different short codes. I guess I set up my stuff wrong, or not the way Disqus suggests. Oh well.
 
-So here's what I did to transfer my comments. It's pretty simple. **Note:** your comments need to be in your WordPress database for this to work.
+So here's what I did, and it was a time consuming task.
 
-1. Reset the Disqus plug-in in WordPress
-2. Login to the Disqus plug-in again
-    * This time, use the site with the short code where you want the comments to be transferred.
-3. Go to the settings page of the Disqus plug-in
-4. Click "Export Comments". It should be near the bottom
+1. Exported my whole WordPress site
+    * Navigate to WP Dashboard > Tools > Export
+    * Choose the whole site option
+2. Replace all instances of your old blog URL with your new one (if they're the same skip this step)
+3. Replace all URLs of your old posts to the URLs of your new posts
+    * Ex) **/2198/2013/04/my-first-post-on-medium-why-go-to-college** => **/2013/04/11/my-first-post-on-medium-why-go-to-college.html**
+    * This is by far the most time consuming part
+4. Upload the new XML file to the [Disqus Import Tool][1]
 
-Once you do all this, you should see the plugin doing its job. Don't reload the page!! 
+After you do this, you should see the comments on your Disqus dashboard. Be sure to check the URLs to make sure they match the correct post they should be attached to.
 
-After that finishes, you should change your site back to how it was. Repeat steps 1 & 2, but this time choose the site with the original short code (the one you changed it from originally).
+To test this, I created a testing site on Disqus and imported the comments there to make sure everything was correct before actually importing them to my actual blog.
 
-It takes Disqus about 24 hours to actually process the comments and add them to your site, so don't worry if they're not there right after you complete this migration.
 
-Good Luck!
+[1]: http://avbabble.disqus.com/admin/discussions/import/platform/wordpress/
