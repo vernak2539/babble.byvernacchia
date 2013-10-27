@@ -137,7 +137,9 @@ body {
 			width:140px;
 			height: 140px;
 			margin: 0 auto;
-			background: url(/img/headshot.jpg) no-repeat;
+			background-image: url(/img/headshot.jpg);
+			background-size: 140px 140px;
+			background-repeat: no-repeat;
 			-webkit-border-radius : 500px;
 			-moz-border-radius    : 500px;
 			border-radius         : 500px;
@@ -159,8 +161,9 @@ body {
 			text-align: center;
 
 			>li {
-				background: url('/img/social-icons.png') no-repeat;
+				background-image: url('/img/social-icons.png');
 				background-size: 90px 30px;
+				background-repeat: no-repeat;
 				width: 30px;
 				height: 30px;
 				display: inline-block;
@@ -333,16 +336,12 @@ body {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 	/* Retina-specific stuff here */
 	.bio-image {
-		background: url(/img/headshot-2x.jpg) no-repeat;
-		background-size: 140px 140px;
+		background-image: url(/img/headshot-2x.jpg) !important;
 	}
 
 	.social {
-		list-style:none;
-		
 		>li {
-			background: url('/img/social-icons-2x.png') no-repeat;
-			background-size: 90px 30px;
+			background-image: url(/img/social-icons-2x.png) !important;
 		}
 	}
 }
