@@ -16,6 +16,7 @@
         1. basic filtering of results (not delivering pages)
         2. modified text display of entries delivered
         3. substring title returned if over certain amount of characters
+8. [jsFiddle](https://github.com/imathis/octopress/blob/master/plugins/jsfiddle.rb)
 
 ### GEMs Needed
 

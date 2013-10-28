@@ -21,7 +21,9 @@ All you have to do is added it to a selector and your set to go. I put a simple 
 
 ### A Simple Example
 
-**(update)** Check out the [Demo][2] if you want to see what this looks like live.
+**The Fiddle**
+
+{% jsfiddle rj2Zx css,html,result %}
 
 **CSS**
 
