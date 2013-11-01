@@ -27,6 +27,12 @@ I have just started using Ruby v2.0.0 (but this will work with v1.9.3). GEMs nee
 3. json - _for Lunr Search_
 4. nokogiri - _for Lunr Search_
 
+###If You're Using Github Pages
+If you're using Github Pages to publish with this "theme" you **WILL NOT** be able to use any custom plugins. Checkout the two links below, which outline what you can do to combat this problem.
+
++ http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html
++ http://davidensinger.com/2013/04/deploying-jekyll-to-github-pages/
+
 ###Grunt Tasks
 
 1. **default**
@@ -60,9 +66,3 @@ I have just started using Ruby v2.0.0 (but this will work with v1.9.3). GEMs nee
     * removes unnecessary files in _site/ directory
     * minifies HTML
     * minifies JSON used by Lunr search plugin
-
-###If You're Using Github Pages
-If you're using Github Pages to publish with this "theme" you **WILL NOT** be able to use any custom plugins. Checkout the two links below, which outline what you can do to combat this problem.
-
-+ http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html
-+ http://davidensinger.com/2013/04/deploying-jekyll-to-github-pages/
