@@ -66,3 +66,8 @@ If you're using Github Pages to publish with this "theme" you **WILL NOT** be ab
     * removes unnecessary files in _site/ directory
     * minifies HTML
     * minifies JSON used by Lunr search plugin
+
+
+###GH Pages
+
+I keep the GH Pages pretty up to date. Just need to update with how to use and we should be good. They are located at http://vernak2539.github.io/babble.byvernacchia/
