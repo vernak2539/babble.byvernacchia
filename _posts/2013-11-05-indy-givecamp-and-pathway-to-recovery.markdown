@@ -17,7 +17,7 @@ This past weekend I participated in Indy GiveCamp, which is a charity event for 
 
 The non-profit my team was stuck with, just messing it was a great time, was [Pathway to Recovery][1]. They aim to give the homeless another chance at life by putting them through a 3 step program. I think it's great what they're doing. Sandy, their Director, seems super passionate about it, which is awesome and made the weekend much more enjoyable!
 
-###Pre-GiveCamp Website
+###Pre GiveCamp Website
 
 During the first couple hours of GiveCamp we investigated Pathway to Recovery's current website. It was very basic. The CMS they used was very lightweight, and good for editing content that was already there. Not the best for creating new content.
 
@@ -33,7 +33,7 @@ After this initial analysis of their site, **our goals** became:
 
 {% image 870xAUTO /new_post_img/camp-give-before.jpg %}
 
-###Post-GiveCamp Website
+###Post GiveCamp Website
 
 Our team ended up starting fresh and using WordPress as their new CMS. Yeah WordPress sucks to develop on, but it gives Pathway to Recovery so many more options and really empowers them to create and edit content how they wish.
 
