@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Unit, Grunt, and Require. Problems?"
+title:  "QUnit, Grunt, and Require. Problems?"
 date:   2013-06-05 11:23:09
 tags:
 - javascript
