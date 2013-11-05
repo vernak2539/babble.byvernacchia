@@ -6,7 +6,7 @@ tags:
   - jekyll
   - jekyll-theme
   - twitter-bootstrap
-summary: 
+summary: I just finished enough on this Jekyll blog to finally write a post on how to use it. It's been a long time coming, but it's time. Here's what you need to know
 ---
 
 I just finished enough on this Jekyll blog to finally write a post on how to use it. It's been a long time coming, but it's time.
