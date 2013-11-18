@@ -6,9 +6,9 @@
 	<meta property="og:title" content="{{ site.title }}" />
 {% endif %}
 {% if page.url %}
-	<meta property="og:url" content="{{ site.url }}" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url | remove: 'index.html' }}" />
 {% else %}
-	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	<meta property="og:url" content="{{ site.url }}" />
 {% endif %}
 {% if page.image %}
   <meta property="og:image" content="{{ page.image }}" />
