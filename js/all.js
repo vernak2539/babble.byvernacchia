@@ -21,4 +21,11 @@ $(function() {
 		}
 		
 	});
+
+	$(document).ready(function() {
+		$(document).on('click', '.hero-container', function() {
+			window.location = $(this).data().storyUrl;
+			return false;
+		});
+	});
 });
