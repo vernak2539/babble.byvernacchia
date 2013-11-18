@@ -6,11 +6,11 @@
 		</div>
 		<div class="row-fluid">
 			<div class="span9">
-				<div class="span12 post">
+				<div class="span12 post single-page">
 					<p><a href="/">go back home...</a></p>
 					<h1 class="site-title">{{ page.title }}</h1>
 					<p class="post-meta">{{ page.date | date: "%B %d, %Y at %I:%M %p" }}</p>
-					<p>{{ content }}</p>
+					{{ content }}
 					<div class="tag-container">
 						<strong>Tags:&nbsp;</strong>
 						{% for tag in page.tags %}

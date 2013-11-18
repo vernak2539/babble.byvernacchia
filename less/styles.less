@@ -104,12 +104,32 @@ body {
 			>.post-meta {
 				color: @gray;
 				.size-font(.95);
-				margin: 9px 0 5px;
+				margin: 0 0 5px;
 			}
 
 			>.post-content {
 				a, a:visited {
 					color: @red;
+				}
+
+				.post-thumbnail {
+					float: left;
+					background: #fff;
+					border: 1px solid #ccc;
+					padding: 5px;
+					margin: 5px 10px 10px 0;
+				}
+
+				.post-summary {
+					overflow: hidden;
+				}
+			}
+
+			&.single-page {
+				.post-meta{
+					+p {
+						font-style: italic;
+					}
 				}
 			}
 
@@ -127,6 +147,10 @@ body {
 				background-size: 826px 150px;
 				-webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
 				box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
+
+				+.post-meta {
+					margin: 9px 0 5px;
+				}
 
 				>.gradient-container {
 					position: absolute;

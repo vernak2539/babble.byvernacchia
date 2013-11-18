@@ -6,10 +6,10 @@ tags:
   - wordpress
   - disqus
   - comment-migration
-summary: I have been working hard on my Jekyll blog (this thingy) and finally got to a point where I wanted to migrate my Disqus comments from my old WordPress blog to this one
+summary: I have been working hard on my Jekyll blog (this thingy) and finally got to a point where I wanted to migrate my Disqus comments from my old WordPress blog to this one. I started by trying to use Disqus' URL Mapper migration tool, but it turned out that you couldn’t migrate comments between sites with different short codes. I guess I set up my stuff wrong, or not the way Disqus suggests. Oh well
+thumbnail: 'disqus_thumb.jpg'
+twiitterThumbnail: 'http://babble.byvernacchia.com/img/posts/thumbnails/disqus_thumb.jpg'
 ---
-
-
 I have been working hard on my Jekyll blog (this thingy) and finally got to a point where I wanted to migrate my Disqus comments from my old WordPress blog to this one.
 
 I started by trying to use Disqus' URL Mapper migration tool, but it turned out that you couldn’t migrate comments between sites with different short codes. I guess I set up my stuff wrong, or not the way Disqus suggests. Oh well.
