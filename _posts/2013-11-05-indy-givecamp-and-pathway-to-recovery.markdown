@@ -9,6 +9,7 @@ tags:
   - twitter-bootstrap
   - wordpress
 summary: This past weekend I participated in Indy GiveCamp, which is a charity event for non-profits around Indianapolis. The goal of Indy GiveCamp was to make "something" that helped these non-profits; Delivering a product or service they don't have time or resources to create/update
+heroImage: 'pathway_hero.jpg'
 ---
 
 This past weekend I participated in Indy GiveCamp, which is a charity event for non-profits around Indianapolis. The goal of Indy GiveCamp was to make "something" that helped these non-profits; Delivering a product or service they don't have time or resources to create/update.

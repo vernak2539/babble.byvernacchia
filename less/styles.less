@@ -104,12 +104,60 @@ body {
 			>.post-meta {
 				color: @gray;
 				.size-font(.95);
-				margin-bottom: 3px;
+				margin: 9px 0 5px;
 			}
 
 			>.post-content {
 				a, a:visited {
 					color: @red;
+				}
+			}
+
+			&:first-child {
+				.hero_container {
+					margin-top: 15px;
+				}
+			}
+
+			.hero-container {
+				position: relative;
+				width: 100%;
+				height: 150px;
+				background-position: top left;
+				background-size: 826px 150px;
+				-webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
+				box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
+
+				>.gradient-container {
+					position: absolute;
+					top:0;
+					right:0;
+					left:0;
+					bottom:0;
+					background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 80%); /* FF3.6+ */
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(80%,rgba(0,0,0,0.55))); /* Chrome,Safari4+ */
+					background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.55) 80%); /* Chrome10+,Safari5.1+ */
+					background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.55) 80%); /* Opera 11.10+ */
+					background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.55) 80%); /* IE10+ */
+					background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.55) 80%); /* W3C */
+					background-size: 100% 40px;
+					background-repeat: no-repeat;
+					background-position: bottom center;
+
+					>h3 {
+						position: absolute;
+						bottom: 5px;
+						left: 10px;
+						margin-bottom: 0;
+
+						>a {
+							color: @white;
+
+							&:hover {
+								color: @white !important;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -379,6 +427,34 @@ body {
 		form {
 			>.custom-input {
 				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		.container {
+			.post {
+				.hero-container {
+					>.gradient-container {
+						background-size: 100% 150px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	body {
+		.container {
+			.post {
+				.hero-container {
+					>.gradient-container {
+						background-size: 100% 150px;
+					}
+				}
 			}
 		}
 	}
