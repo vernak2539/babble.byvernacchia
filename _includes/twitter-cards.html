@@ -1,8 +1,11 @@
 {% if page.heroImage %}
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image:src" content="{{ site.url }}/post_hero_images/{{ page.heroImage }}">
+<meta name="twitter:image:src" content="{{ page.twitterImage }}">
 {% else %}
 <meta name="twitter:card" content="summary" />
+	{% if page.thumbnail %}
+	<meta name="twitter:image:src" content="{{ page.twiitterThumbnail }}">
+	{% endif %}
 {% endif %}
 <meta name="twitter:site" content="@vernacchia" />
 <meta name="twitter:creator" content="@vernacchia" />
