@@ -105,6 +105,10 @@ module.exports = function(grunt) {
 						filter: 'isFile'
 					}
 				]
+			},
+			builtSite: {
+				src: [ './_site/**/*' ],
+				dest: './built-site/'
 			}
 		},
 		watch: {
@@ -160,7 +164,9 @@ module.exports = function(grunt) {
 			"./_site/bower.json",
 			"./_site/Gruntfile.js",
 			"./_site/package.json",
-			"./_site/README.md"
+			"./_site/README.md",
+			"./built-site/**/*",
+			"!./built-site/.git/**/*"
 		]
 	});
 
@@ -198,6 +204,11 @@ module.exports = function(grunt) {
 		, 'clean'
 		, 'htmlmin:dist'
 		, 'minjson:searchMin'
+	]);
+
+	grunt.registerTask( 'build', [
+		'release'
+		, 'copy:builtSite'
 	]);
 
 	grunt.registerTask('css', [ 'recess:compile', 'recess:compileSearch' ] );
