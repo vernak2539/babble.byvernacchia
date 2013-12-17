@@ -69,6 +69,10 @@ If you're using Github Pages to publish with this "theme" you **WILL NOT** be ab
     * removes unnecessary files in _site/ directory
     * minifies HTML
     * minifies JSON used by Lunr search plugin
+5. **build**
+    * runs _release_ task
+    * copies built site to `built-site/` folder
+        * allows me to only deploy this built site and not have my server take on the task of actually running the build
 
 
 ###GH Pages
