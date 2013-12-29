@@ -82,8 +82,7 @@ When running the `hasOwnProperty` function on an object, it will not look at the
 2. `delete` leaves a hole, `splice`
  doesn't
 3. "JS itself is confused about the difference between arrays and objects" - DC
-4. Cool way to check if variable is array, not object, is to check the constructor
-    * I usually check the prototype change
+4. Cool way to check if variable is array, not object, is to check the constructor or the prototype chain (this doesn't lie)
 
 ###Methods
 
@@ -93,6 +92,6 @@ Nothing too much to say here other than it was cool to see how methods like `spl
 
 I'm not going to tell you. If you really want to know you should read the book.
 
-Basically, they include everything you're told not to do when first learning JS.
+Basically, they are some things that you already probably know you shouldn't be using. But if you are using them, be sure to use them sparingly.
 
 [1]: http://en.wikipedia.org/wiki/First-class_function
