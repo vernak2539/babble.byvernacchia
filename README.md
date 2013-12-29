@@ -17,9 +17,9 @@
         2. modified text display of entries delivered
         3. substring title returned if over certain amount of characters
 8. [jsFiddle](https://github.com/imathis/octopress/blob/master/plugins/jsfiddle.rb)
-9. Twitter Cards
+9. Twitter Cards Meta Data
     * Support for summary and large summary cards
-10. Open Graph
+10. Open Graph Meta Data (no images yet)
 
 ### GEMs Needed
 
@@ -69,6 +69,10 @@ If you're using Github Pages to publish with this "theme" you **WILL NOT** be ab
     * removes unnecessary files in _site/ directory
     * minifies HTML
     * minifies JSON used by Lunr search plugin
+5. **build**
+    * runs _release_ task
+    * copies built site to `built-site/` folder
+        * allows me to only deploy this built site and not have my server take on the task of actually running the build
 
 
 ###GH Pages
