@@ -15,7 +15,7 @@ twitterHeroImage: 'http://s3.amazonaws.com/babble.vernacchia/posts/twitterImg/et
 Delivering an app (front-end) can be hard. There are a lot of things to take into account. Should I lint my files? Do I need unit tests? How do I deliver 
 the most optimized content to the user? Usually people have to do all these steps manually, cutting productivity. But not anymore!!
 
-Welcome [GruntJS][17] to the playground; a task runner created to solve this automation problem. Why a task runner you might ask?
+Welcome [GruntJS][17] to the playground; a task runner created to solve this repetitive problem. Why a task runner you might ask?
 
 > In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
 > <small class="pull-right"><cite>GruntJS.com</cite></small>
@@ -35,8 +35,6 @@ created during the process.
 I also feel Gulp isn't as viable because of Grunt's community, which is HUGE. There are so many plugins out there that can help with almost anything. 
 Unfortunately, Gulp is not as mature. I just found the [gulp-requirejs plugin][3], but before today not having this was a huge blocker as most our apps use RequireJS. 
 It doesn't seem worth the time until the community gets bigger.
-
-Or maybe I'm looking at it the wrong way. Maybe we should help the community grow. That sounds like a better option.
 
 I have been testing out Gulp on some of my personal projects and like it so far. I'm actually almost done writing my first plugin. We'll see how that goes.
 
