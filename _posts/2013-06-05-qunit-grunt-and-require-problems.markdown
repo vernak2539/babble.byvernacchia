@@ -4,6 +4,7 @@ title:  "QUnit, Grunt, and Require. Problems?"
 date:   2013-06-05 11:23:09
 tags:
 - javascript
+- grunt
 - gruntjs
 - requirejs
 - qunit
