@@ -428,9 +428,15 @@ body {
 	}
 }
 
-pre code {
-	overflow-wrap: normal;
+pre {
+	overflow: auto;
+	word-wrap: normal;
 	white-space: pre;
+
+	code {
+		overflow-wrap: normal;
+		white-space: pre;
+	}
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
