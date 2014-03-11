@@ -11,7 +11,7 @@ tags:
 - paypal-lusca
 - programming
 - security
-summary: Taking the time to make your node app secure? Using ExpressJS as your server? If you answered \"yes\" to both of these, then boy do I have some news for you. If you answered \"no\" to the first question, there\'s something wrong
+summary: Taking the time to make your node app secure? Using ExpressJS as your server? If you answered "yes" to both of these, then boy do I have some news for you. If you answered "no" to the first question, there's something wrong
 heroImage: 'csrf_hero.jpg'
 twitterHeroImage: 'https://s3.amazonaws.com/babble.vernacchia/posts/twitterImg/csrf_hero.jpg'
 ---
