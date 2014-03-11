@@ -29,6 +29,7 @@ I have just started using Ruby v2.0.0 (but this will work with v1.9.3). GEMs nee
 2. activesupport - _for caching_
 3. json - _for Lunr Search_
 4. nokogiri - _for Lunr Search_
+5. mini_magick - _for image resizing (will need Imagemagick installed on machine)_ 
 
 ###If You're Using Github Pages
 If you're using Github Pages to publish with this "theme" you **WILL NOT** be able to use any custom plugins. Checkout the two links below, which outline what you can do to combat this problem.
