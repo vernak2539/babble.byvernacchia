@@ -7,7 +7,8 @@ tags:
 - version-control
 - programming
 summary: One of the most important things I use at work is Git. It just so happens to be the best version control system out there. Alright maybe I'm a little biased, but it's much better than others. Time to explore what I found after diving deeper into Git
-heroImage: 'lead_hero.jpg'
+heroImage: 'git_hero.jpg'
+twitterHeroImage: 'https://s3.amazonaws.com/babble.vernacchia/posts/twitterImg/git_hero.jpg'
 ---
 
 One of the most important things I use at work is [Git][1]; A Version Control System (VCS). It just so happens to be the best version control system out there. Alright maybe I'm a little biased, but it's much better than others.
