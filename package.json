@@ -8,6 +8,7 @@
     "type": "git",
     "url": "git@bitbucket.org:vernak2539/babble-jekyll.git"
   },
+  "private": true,
   "keywords": [
     "jekyll",
     "vernacchia",
